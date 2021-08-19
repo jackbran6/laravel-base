@@ -34,8 +34,8 @@ Route::post('article', [ArticleController::class, 'store']);
 
 // Update existing article
 
-Route::put('articles', [ArticleController::class, 'store']);
+Route::put('article', [ArticleController::class, 'store']);
 
 // Delete article
 
-Route::delete('articles', [ArticleController::class, 'destroy']);
+Route::delete('article/{id}', [ArticleController::class, 'destroy']);
